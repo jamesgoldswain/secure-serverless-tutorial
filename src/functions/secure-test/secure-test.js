@@ -50,7 +50,7 @@ exports.handler = async ( event ) => {
 			headers: {
 				"Content-Type": "application/json"
 			},
-			body: JSON.stringify( { message: `Hello ${ jwt.claims.sub }` } )
+			body: JSON.stringify( { message: `Hello ${ jwt.claims.sub }. It's working!` } )
 		};
 	} catch ( err ) {
 		console.log( err );
